@@ -1,5 +1,5 @@
 <resources>
-    <string name="sic">Simple Interest Calculator</string>
+    <string name="sic" translatable="false">Simple Interest Calculator</string>
     <string name="p">Principal</string>
     <string name="ir">Interest Rate per 100 Rs</string>
     <string name="tim">time in months</string>
@@ -14,7 +14,7 @@
     <string name="total_months">Total Months : </string>
     <string name="interest_per_month">Interest per Month : </string>
     <string name="total_interest">Total Interest : </string>
-    <string name="total_sip">Total(P x R x T) / 100 : </string>
+    <string name="total_sip">Total(P x T x R) / 100 : </string>
     <string name="settings">Settings</string>
     <string name="app_name">Simple Interest Calculator</string>
 </resources>

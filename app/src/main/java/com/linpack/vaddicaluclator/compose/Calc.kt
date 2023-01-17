@@ -1,6 +1,8 @@
 package com.linpack.vaddicaluclator.compose
 
 import android.app.DatePickerDialog
+import android.os.Bundle
+import android.provider.Settings
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -15,6 +17,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.linpack.vaddicaluclator.R
 import com.linpack.vaddicaluclator.compose.parts.ErrorTextField
 import com.linpack.vaddicaluclator.compose.parts.ErrorTextFieldState
@@ -26,8 +29,10 @@ import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
 import java.util.*
 
+
 const val SPACE = " "
 const val DATE_FORMAT = "dd-MM-yyyy"
+
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun SIC(paddingValues: PaddingValues) {
@@ -64,6 +69,7 @@ fun SIC(paddingValues: PaddingValues) {
             else -> null
         }
     })
+    val mFirebaseAnalytics: FirebaseAnalytics? = FirebaseAnalytics.getInstance(context)
     val interestPerMonthState = remember { mutableStateOf("") }
     val totalDaysState = remember { mutableStateOf("") }
     val totalMonthsState = remember { mutableStateOf("") }
@@ -93,7 +99,8 @@ fun SIC(paddingValues: PaddingValues) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(rememberScrollState()).padding(12.dp)
+            .verticalScroll(rememberScrollState())
+            .padding(12.dp)
     ) {
         ErrorTextField(
             state = principalState,
@@ -111,53 +118,44 @@ fun SIC(paddingValues: PaddingValues) {
                 .fillMaxWidth(),
         )
         Spacer(modifier = Modifier.height(8.dp))
-        ReadonlyTextField(
-            state = fromDateState,
+        ReadonlyTextField(state = fromDateState,
             placeholderText = stringResource(R.string.fd),
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
                 .fillMaxWidth(),
             onClick = {
                 DatePickerDialog(
-                    context, fromDatePickerDialogListener,
+                    context,
+                    fromDatePickerDialogListener,
                     fromCal.get(Calendar.YEAR),
                     fromCal.get(Calendar.MONTH),
                     fromCal.get(Calendar.DAY_OF_MONTH)
                 ).show()
-            }
-        )
+            })
         Spacer(modifier = Modifier.height(8.dp))
-        ReadonlyTextField(
-            state = toDateState,
+        ReadonlyTextField(state = toDateState,
             placeholderText = stringResource(R.string.td),
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
                 .fillMaxWidth(),
             onClick = {
                 DatePickerDialog(
-                    context, toDatePickerDialogListener,
+                    context,
+                    toDatePickerDialogListener,
                     toCal.get(Calendar.YEAR),
                     toCal.get(Calendar.MONTH),
                     toCal.get(Calendar.DAY_OF_MONTH)
                 ).show()
-            }
-        )
+            })
         Spacer(modifier = Modifier.height(8.dp))
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = {
                 keyboardController?.hide()
                 listOf(
-                    principalState,
-                    interestState,
-                    fromDateState,
-                    toDateState
+                    principalState, interestState, fromDateState, toDateState
                 ).forEach(ErrorTextFieldState::validate)
-                if (principalState.text.isNotBlank()
-                    && interestState.text.isNotBlank()
-                    && fromDateState.text.isNotBlank()
-                    && toDateState.text.isNotBlank()
-                ) {
+                if (principalState.text.isNotBlank() && interestState.text.isNotBlank() && fromDateState.text.isNotBlank() && toDateState.text.isNotBlank()) {
                     val principal = principalState.text.toDouble()
                     val rate = interestState.text.toDouble()
                     val formatter = DateTimeFormatter.ofPattern(DATE_FORMAT)
@@ -165,14 +163,34 @@ fun SIC(paddingValues: PaddingValues) {
                     val t = LocalDate.parse(toDateState.text, formatter)
                     val days = ChronoUnit.DAYS.between(f, t)
                     val months = days / 30.44
-                    val i = ((principal * rate * months) / 100)
-                    val total = principal + i
+                    val interest = ((principal * rate * months) / 100)
+                    val total = principal + interest
                     totalDaysState.value = days.toString()
                     totalMonthsState.value = String.format("%.2f", months)
-                    interestPerMonthState.value = String.format("%.2f", i / months)
-                    totalInterest.value = String.format("%.2f", i)
+                    interestPerMonthState.value = String.format("%.2f", interest / months)
+                    totalInterest.value = String.format("%.2f", interest)
                     totalState.value = String.format("%.2f", total)
 
+                    //firebase
+                    val bundle = Bundle()
+                    bundle.putString(
+                        "device_name",
+                        Settings.Global.getString(context.contentResolver, "device_name")
+                    )
+                    bundle.putString(context.getString(R.string.p), principal.toString())
+                    bundle.putString(context.getString(R.string.ir), rate.toString())
+                    bundle.putString(context.getString(R.string.total_days), totalDaysState.value)
+                    bundle.putString(
+                        context.getString(R.string.total_months), totalMonthsState.value
+                    )
+                    bundle.putString(
+                        context.getString(R.string.total_interest), totalInterest.value
+                    )
+                    bundle.putString(context.getString(R.string.total_sip), totalState.value)
+                    bundle.putString(
+                        context.getString(R.string.interest_per_month), interestPerMonthState.value
+                    )
+                    mFirebaseAnalytics?.logEvent(context.getString(R.string.sic), bundle)
                 }
             },
         ) {
@@ -215,7 +233,7 @@ fun SIC(paddingValues: PaddingValues) {
             Text(buildString {
                 append(stringResource(R.string.total_interest))
                 append(SPACE)
-                append(totalState.value)
+                append(totalInterest.value)
             })
         }
         Spacer(modifier = Modifier.height(8.dp))
@@ -225,7 +243,7 @@ fun SIC(paddingValues: PaddingValues) {
             Text(buildString {
                 append(stringResource(R.string.total_sip))
                 append(SPACE)
-                append(totalInterest.value)
+                append(totalState.value)
             })
         }
     }

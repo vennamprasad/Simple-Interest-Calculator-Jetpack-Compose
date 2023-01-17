@@ -15,7 +15,7 @@
     <string name="total_months">மொத்த மாதங்கள்:</string>
     <string name="interest_per_month">மாத வட்டி:</string>
     <string name="total_interest">மொத்த வட்டி:</string>
-    <string name="total_sip">மொத்தம்(P x R x T) /100 :</string>
+    <string name="total_sip">மொத்தம்(P x T x R) /100 :</string>
     <string name="settings">அமைப்புகள்</string>
     <string name="app_name">எளிய வட்டி கால்குலேட்டர்</string>
 </resources>
