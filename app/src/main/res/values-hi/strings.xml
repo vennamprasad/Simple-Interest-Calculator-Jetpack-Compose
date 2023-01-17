@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sic">साधारण ब्याज कैलक्यूलेटर</string>
     <string name="p">प्रधान अध्यापक</string>
     <string name="ir">ब्याज दर प्रति 100 रु</string>
     <string name="tim">महीनों में समय</string>

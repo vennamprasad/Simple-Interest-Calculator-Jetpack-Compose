@@ -100,7 +100,8 @@ fun SIC(paddingValues: PaddingValues) {
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
-            .padding(12.dp)
+            .padding(vertical = 20.dp, horizontal = 12.dp),
+        verticalArrangement = Arrangement.Center
     ) {
         ErrorTextField(
             state = principalState,
@@ -197,55 +198,35 @@ fun SIC(paddingValues: PaddingValues) {
             Text(stringResource(R.string.calc))
         }
         Spacer(modifier = Modifier.height(8.dp))
-        OutlinedButton(modifier = Modifier
-            .align(Alignment.Start)
-            .fillMaxWidth(), onClick = { }) {
-            Text(buildString {
-                append(stringResource(R.string.total_days))
-                append(SPACE)
-                append(totalDaysState.value)
-            })
-        }
+        Text(buildString {
+            append(stringResource(R.string.total_days))
+            append(SPACE)
+            append(totalDaysState.value)
+        })
         Spacer(modifier = Modifier.height(8.dp))
-        OutlinedButton(modifier = Modifier
-            .align(Alignment.Start)
-            .fillMaxWidth(), onClick = { }) {
-            Text(buildString {
-                append(stringResource(R.string.total_months))
-                append(SPACE)
-                append(totalMonthsState.value)
-            })
-        }
+        Text(buildString {
+            append(stringResource(R.string.total_months))
+            append(SPACE)
+            append(totalMonthsState.value)
+        })
         Spacer(modifier = Modifier.height(8.dp))
-        OutlinedButton(modifier = Modifier
-            .align(Alignment.Start)
-            .fillMaxWidth(), onClick = { }) {
-            Text(buildString {
-                append(stringResource(R.string.interest_per_month))
-                append(SPACE)
-                append(interestPerMonthState.value)
-            })
-        }
+        Text(buildString {
+            append(stringResource(R.string.interest_per_month))
+            append(SPACE)
+            append(interestPerMonthState.value)
+        })
         Spacer(modifier = Modifier.height(8.dp))
-        OutlinedButton(modifier = Modifier
-            .align(Alignment.Start)
-            .fillMaxWidth(), onClick = { }) {
-            Text(buildString {
-                append(stringResource(R.string.total_interest))
-                append(SPACE)
-                append(totalInterest.value)
-            })
-        }
+        Text(buildString {
+            append(stringResource(R.string.total_interest))
+            append(SPACE)
+            append(totalInterest.value)
+        })
         Spacer(modifier = Modifier.height(8.dp))
-        OutlinedButton(modifier = Modifier
-            .align(Alignment.Start)
-            .fillMaxWidth(), onClick = { }) {
-            Text(buildString {
-                append(stringResource(R.string.total_sip))
-                append(SPACE)
-                append(totalState.value)
-            })
-        }
+        Text(buildString {
+            append(stringResource(R.string.total_sip))
+            append(SPACE)
+            append(totalState.value)
+        })
     }
 }
 

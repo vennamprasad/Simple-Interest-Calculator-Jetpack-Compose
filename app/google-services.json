@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "786262326667",
+    "project_id": "simple-interest-caluclator",
+    "storage_bucket": "simple-interest-caluclator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786262326667:android:13a7ac0c62f40e776dc38e",
+        "android_client_info": {
+          "package_name": "com.linpack.vaddicaluclator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786262326667-uu9436cumqn7479fihhou3a8jcd0j272.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtknGoGbCc44fR_U4R3rDneTyb9PB5A5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786262326667-uu9436cumqn7479fihhou3a8jcd0j272.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

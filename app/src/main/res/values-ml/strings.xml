@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sic">ലളിതമായ പലിശ കാൽക്കുലേറ്റർ</string>
     <string name="p">പ്രിൻസിപ്പൽ</string>
     <string name="ir">100 രൂപയ്‌ക്കുള്ള പലിശ നിരക്ക്</string>
     <string name="tim">മാസങ്ങളിൽ സമയം</string>

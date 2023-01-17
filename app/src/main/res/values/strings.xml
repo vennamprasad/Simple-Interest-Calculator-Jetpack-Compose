@@ -1,5 +1,5 @@
 <resources>
-    <string name="sic" translatable="false">Simple Interest Calculator</string>
+    <string name="sic">Simple Interest Calculator</string>
     <string name="p">Principal</string>
     <string name="ir">Interest Rate per 100 Rs</string>
     <string name="tim">time in months</string>

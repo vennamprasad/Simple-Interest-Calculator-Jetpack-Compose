@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sic">ಸರಳ ಬಡ್ಡಿ ಕ್ಯಾಲ್ಕುಲೇಟರ್</string>
     <string name="p">ಪ್ರಿನ್ಸಿಪಾಲ್</string>
     <string name="ir">ಬಡ್ಡಿ ದರ ಪ್ರತಿ 100 ರೂ</string>
     <string name="tim">ತಿಂಗಳುಗಳಲ್ಲಿ ಸಮಯ</string>

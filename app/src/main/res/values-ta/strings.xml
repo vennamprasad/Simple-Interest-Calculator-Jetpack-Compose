@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sic">எளிய வட்டி கால்குலேட்டர்</string>
     <string name="p">அதிபர்</string>
     <string name="ir">100 ரூபாய்க்கான வட்டி விகிதம்</string>
     <string name="tim">மாதங்களில் நேரம்</string>
