@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sic">ലളിതമായ പലിശ കാൽക്കുലേറ്റർ</string>
+    <string name="p">പ്രിൻസിപ്പൽ</string>
+    <string name="ir">100 രൂപയ്‌ക്കുള്ള പലിശ നിരക്ക്</string>
+    <string name="tim">മാസങ്ങളിൽ സമയം</string>
+    <string name="calc">പലിശ കണക്കാക്കുക</string>
+    <string name="pep">ദയവായി പ്രധാന തുക നൽകുക</string>
+    <string name="pei">100 രൂപയ്‌ക്ക് പലിശ നിരക്ക് നൽകുക</string>
+    <string name="fd">തീയതി നൽകിയിരിക്കുന്നു</string>
+    <string name="td">ലഭിച്ച തീയതി</string>
+    <string name="pfd">നൽകിയിരിക്കുന്ന തീയതി തിരഞ്ഞെടുക്കുക</string>
+    <string name="ptd">മടങ്ങിവരുന്ന തീയതി തിരഞ്ഞെടുക്കുക</string>
+    <string name="total_days">ആകെ ദിവസങ്ങൾ:</string>
+    <string name="total_months">ആകെ മാസങ്ങൾ:</string>
+    <string name="interest_per_month">പ്രതിമാസ പലിശ:</string>
+    <string name="total_interest">മൊത്തം പലിശ:</string>
+    <string name="total_sip">ആകെ(P x R x T) /100 :</string>
+    <string name="settings">ക്രമീകരണങ്ങൾ</string>
+    <string name="app_name">ലളിതമായ പലിശ കാൽക്കുലേറ്റർ</string>
+</resources>

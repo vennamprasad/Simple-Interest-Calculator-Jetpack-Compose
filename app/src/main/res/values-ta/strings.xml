@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sic">எளிய வட்டி கால்குலேட்டர்</string>
+    <string name="p">அதிபர்</string>
+    <string name="ir">100 ரூபாய்க்கான வட்டி விகிதம்</string>
+    <string name="tim">மாதங்களில் நேரம்</string>
+    <string name="calc">வட்டியைக் கணக்கிடுங்கள்</string>
+    <string name="pep">அசல் தொகையை உள்ளிடவும்</string>
+    <string name="pei">100 ரூபாய்க்கான வட்டி விகிதத்தை உள்ளிடவும்</string>
+    <string name="fd">கொடுக்கப்பட்ட தேதி</string>
+    <string name="td">பெற்ற தேதி</string>
+    <string name="pfd">கொடுக்கப்பட்ட தேதியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="ptd">திரும்பும் தேதியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="total_days">மொத்த நாட்கள்:</string>
+    <string name="total_months">மொத்த மாதங்கள்:</string>
+    <string name="interest_per_month">மாத வட்டி:</string>
+    <string name="total_interest">மொத்த வட்டி:</string>
+    <string name="total_sip">மொத்தம்(P x R x T) /100 :</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="app_name">எளிய வட்டி கால்குலேட்டர்</string>
+</resources>

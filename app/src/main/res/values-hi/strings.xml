@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sic">साधारण ब्याज कैलक्यूलेटर</string>
+    <string name="p">प्रधान अध्यापक</string>
+    <string name="ir">ब्याज दर प्रति 100 रु</string>
+    <string name="tim">महीनों में समय</string>
+    <string name="calc">ब्याज की गणना करें</string>
+    <string name="pep">कृपया मूल राशि दर्ज करें</string>
+    <string name="pei">कृपया प्रति 100 रुपये की ब्याज दर दर्ज करें</string>
+    <string name="fd">दी गई तारीख</string>
+    <string name="td">प्राप्त तारीख</string>
+    <string name="pfd">कृपया दी गई तिथि का चयन करें</string>
+    <string name="ptd">कृपया वापसी तिथि चुनें</string>
+    <string name="total_days">कुल दिन :</string>
+    <string name="total_months">कुल महीने :</string>
+    <string name="interest_per_month">प्रति माह ब्याज :</string>
+    <string name="total_interest">कुल ब्याज :</string>
+    <string name="total_sip">कुल(पी एक्स आर एक्स टी) /100 :</string>
+    <string name="settings">समायोजन</string>
+    <string name="app_name">साधारण ब्याज कैलक्यूलेटर</string>
+</resources>

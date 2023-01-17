@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sic">ಸರಳ ಬಡ್ಡಿ ಕ್ಯಾಲ್ಕುಲೇಟರ್</string>
+    <string name="p">ಪ್ರಿನ್ಸಿಪಾಲ್</string>
+    <string name="ir">ಬಡ್ಡಿ ದರ ಪ್ರತಿ 100 ರೂ</string>
+    <string name="tim">ತಿಂಗಳುಗಳಲ್ಲಿ ಸಮಯ</string>
+    <string name="calc">ಬಡ್ಡಿ ಲೆಕ್ಕಾಚಾರ</string>
+    <string name="pep">ದಯವಿಟ್ಟು ಮೂಲ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="pei">ದಯವಿಟ್ಟು ಪ್ರತಿ 100 ರೂಗಳಿಗೆ ಬಡ್ಡಿ ದರವನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="fd">ದಿನಾಂಕವನ್ನು ನೀಡಲಾಗಿದೆ</string>
+    <string name="td">ಸ್ವೀಕರಿಸಿದ ದಿನಾಂಕ</string>
+    <string name="pfd">ದಯವಿಟ್ಟು ಕೊಟ್ಟಿರುವ ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="ptd">ದಯವಿಟ್ಟು ಹಿಂತಿರುಗುವ ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="total_days">ಒಟ್ಟು ದಿನಗಳು:</string>
+    <string name="total_months">ಒಟ್ಟು ತಿಂಗಳುಗಳು:</string>
+    <string name="interest_per_month">ತಿಂಗಳಿಗೆ ಬಡ್ಡಿ:</string>
+    <string name="total_interest">ಒಟ್ಟು ಆಸಕ್ತಿ:</string>
+    <string name="total_sip">ಒಟ್ಟು(P x R x T) /100 :</string>
+    <string name="settings">ಸಂಯೋಜನೆಗಳು</string>
+    <string name="app_name">ಸರಳ ಬಡ್ಡಿ ಕ್ಯಾಲ್ಕುಲೇಟರ್</string>
+</resources>
