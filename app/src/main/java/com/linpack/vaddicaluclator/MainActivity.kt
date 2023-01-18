@@ -2,16 +2,13 @@
 
 package com.linpack.vaddicaluclator
 
-import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import com.linpack.vaddicaluclator.compose.SIC
 import com.linpack.vaddicaluclator.compose.UIModePreference
@@ -19,7 +16,6 @@ import com.linpack.vaddicaluclator.compose.setLocaleLang
 import com.linpack.vaddicaluclator.ui.theme.CalculatorTheme
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

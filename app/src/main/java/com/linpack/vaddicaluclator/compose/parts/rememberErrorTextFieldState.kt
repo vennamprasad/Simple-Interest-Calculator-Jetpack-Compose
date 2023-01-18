@@ -15,24 +15,21 @@ fun rememberErrorTextFieldState(
         ErrorTextFieldState(initialText, validate)
     }
 }
+
 open class ErrorTextFieldState(
     initialText: String,
     private val validator: (String) -> String?,
 ) {
     var text by mutableStateOf(initialText)
-
     var error by mutableStateOf<String?>(null)
         protected set
-
     fun updateText(newValue: String) {
         text = newValue
         error = null
     }
-
     fun validate() {
         error = validator(text)
     }
-
     companion object {
         fun Saver(
             validate: (String) -> String?,

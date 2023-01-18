@@ -27,7 +27,11 @@ fun ReadonlyTextField(
             OutlinedTextField(
                 value = state.text,
                 onValueChange = { state.updateText(it) },
-                label = { Text(text = placeholderText.capitalize(Locale.ENGLISH))},
+                label = { Text(text = placeholderText.replaceFirstChar {
+                    if (it.isLowerCase()) it.titlecase(
+                        Locale.ENGLISH
+                    ) else it.toString()
+                }) },
                 shape = RoundedCornerShape(8.dp),
                 colors = TextFieldDefaults.textFieldColors(
                     errorCursorColor = Color.Red
