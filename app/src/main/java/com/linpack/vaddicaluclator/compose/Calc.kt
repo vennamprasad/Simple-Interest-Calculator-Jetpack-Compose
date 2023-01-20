@@ -69,7 +69,7 @@ fun SIC(paddingValues: PaddingValues) {
             else -> null
         }
     })
-    val mFirebaseAnalytics: FirebaseAnalytics? = FirebaseAnalytics.getInstance(context)
+    val mFirebaseAnalytics: FirebaseAnalytics = FirebaseAnalytics.getInstance(context)
     val interestPerMonthState = remember { mutableStateOf("") }
     val totalDaysState = remember { mutableStateOf("") }
     val totalMonthsState = remember { mutableStateOf("") }
@@ -108,7 +108,7 @@ fun SIC(paddingValues: PaddingValues) {
             placeholderText = stringResource(R.string.p),
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
-                .fillMaxWidth(),
+                .fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
         ErrorTextField(
@@ -191,7 +191,7 @@ fun SIC(paddingValues: PaddingValues) {
                     bundle.putString(
                         context.getString(R.string.interest_per_month), interestPerMonthState.value
                     )
-                    mFirebaseAnalytics?.logEvent(context.getString(R.string.sic), bundle)
+                    mFirebaseAnalytics.logEvent(context.getString(R.string.sic), bundle)
                 }
             },
         ) {

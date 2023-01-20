@@ -28,7 +28,6 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     topBar = {
                         HomeTopAppBar()
-
                     },
                     content = {
                         SIC(it)
