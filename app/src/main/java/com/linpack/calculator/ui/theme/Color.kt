@@ -1,4 +1,4 @@
-package com.linpack.vaddicaluclator.ui.theme
+package com.linpack.calculator.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

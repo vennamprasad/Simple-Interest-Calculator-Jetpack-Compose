@@ -17,4 +17,5 @@
     <string name="total_sip">कुल(P x T x R) /100 :</string>
     <string name="settings">समायोजन</string>
     <string name="app_name">साधारण ब्याज कैलक्यूलेटर</string>
+    <string name="clear">clear</string>
 </resources>

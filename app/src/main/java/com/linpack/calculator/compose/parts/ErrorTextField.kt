@@ -1,4 +1,4 @@
-package com.linpack.vaddicaluclator.compose.parts
+package com.linpack.calculator.compose.parts
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -21,7 +21,8 @@ import java.util.*
 fun ErrorTextField(
     state: ErrorTextFieldState,
     placeholderText: String,
-    modifier: Modifier
+    modifier: Modifier,
+    maxChar: Int
 ) {
     Column {
         val error = state.error
@@ -32,7 +33,9 @@ fun ErrorTextField(
                     Locale.ENGLISH
                 ) else it.toString()
             }) },
-            onValueChange = { state.updateText(it) },
+            onValueChange = {
+                if (it.length <= maxChar)  state.updateText(it)
+            },
             shape = RoundedCornerShape(8.dp),
             colors = TextFieldDefaults.textFieldColors(
                 errorCursorColor = Color.Red

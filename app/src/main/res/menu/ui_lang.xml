@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_hindi"
         android:checkable="true"
         android:title="Hindi"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText" />
     <item
         android:id="@+id/action_english"
         android:checkable="true"
-        android:title="English"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText"
+        android:title="English" />
     <item
         android:id="@+id/action_telugu"
         android:checkable="true"
-        android:title="Telugu"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText"
+        android:title="Telugu" />
     <item
         android:id="@+id/action_tamil"
         android:checkable="true"
-        android:title="Tamil"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText"
+        android:title="Tamil" />
     <item
         android:id="@+id/action_Kannada"
         android:checkable="true"
-        android:title="Kannada"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText"
+        android:title="Kannada" />
     <item
         android:id="@+id/action_malayalam"
         android:checkable="true"
-        android:title="Malayalam"
-        app:showAsAction="ifRoom" />
+        tools:ignore="HardcodedText"
+        android:title="Malayalam" />
 </menu>

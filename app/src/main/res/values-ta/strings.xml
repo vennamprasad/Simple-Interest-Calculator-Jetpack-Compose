@@ -17,4 +17,5 @@
     <string name="total_sip">மொத்தம்(P x T x R) /100 :</string>
     <string name="settings">அமைப்புகள்</string>
     <string name="app_name">எளிய வட்டி கால்குலேட்டர்</string>
+    <string name="clear">clear</string>
 </resources>

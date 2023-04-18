@@ -17,4 +17,5 @@
     <string name="total_sip">మొత్తం(P x T x R) /100 :</string>
     <string name="settings">సెట్టింగ్‌లు</string>
     <string name="app_name">సాధారణ వడ్డీ కాలిక్యులేటర్</string>
+    <string name="clear">clear</string>
 </resources>

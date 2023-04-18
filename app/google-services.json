@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "786262326667",
-    "project_id": "simple-interest-caluclator",
-    "storage_bucket": "simple-interest-caluclator.appspot.com"
+    "project_number": "475753455171",
+    "project_id": "interestcalc-3fc1a",
+    "storage_bucket": "interestcalc-3fc1a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:786262326667:android:13a7ac0c62f40e776dc38e",
+        "mobilesdk_app_id": "1:475753455171:android:80506e3fe688737a14bef6",
         "android_client_info": {
-          "package_name": "com.linpack.vaddicaluclator"
+          "package_name": "com.linpack.interest.calc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "786262326667-uu9436cumqn7479fihhou3a8jcd0j272.apps.googleusercontent.com",
+          "client_id": "475753455171-3fcvhdpv0gltqd1agb176fjv3sg2njq3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtknGoGbCc44fR_U4R3rDneTyb9PB5A5w"
+          "current_key": "AIzaSyDrcrp0sY-PFhWNNXMWVG9ikK7mtdKhA8k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "786262326667-uu9436cumqn7479fihhou3a8jcd0j272.apps.googleusercontent.com",
+              "client_id": "475753455171-3fcvhdpv0gltqd1agb176fjv3sg2njq3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

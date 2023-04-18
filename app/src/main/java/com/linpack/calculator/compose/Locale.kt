@@ -1,4 +1,4 @@
-package com.linpack.vaddicaluclator.compose
+package com.linpack.calculator.compose
 
 import android.content.Context
 import kotlinx.coroutines.DelicateCoroutinesApi

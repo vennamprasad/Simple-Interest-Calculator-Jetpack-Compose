@@ -1,4 +1,4 @@
-package com.linpack.vaddicaluclator
+package com.linpack.calculator
 
 import org.junit.Test
 

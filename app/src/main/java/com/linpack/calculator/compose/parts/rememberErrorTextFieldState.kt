@@ -1,4 +1,4 @@
-package com.linpack.vaddicaluclator.compose.parts
+package com.linpack.calculator.compose.parts
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue

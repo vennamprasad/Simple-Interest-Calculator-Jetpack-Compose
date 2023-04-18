@@ -17,4 +17,5 @@
     <string name="total_sip">ആകെ(P x T x R) /100 :</string>
     <string name="settings">ക്രമീകരണങ്ങൾ</string>
     <string name="app_name">ലളിതമായ പലിശ കാൽക്കുലേറ്റർ</string>
+    <string name="clear">clear</string>
 </resources>
